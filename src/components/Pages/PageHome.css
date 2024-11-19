@@ -1,0 +1,12 @@
+.cards{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.body{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

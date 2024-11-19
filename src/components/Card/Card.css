@@ -1,0 +1,76 @@
+.card {
+    width: 900px;
+    height: 220px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+.card:hover {
+    box-shadow: 4px 8px 16px #607D8B;
+}
+
+.card_img{
+
+    flex: 0 0 220px; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.cardTitle{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; 
+    padding: 10px;
+}
+
+.card__prices {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cardMeinTitle{
+    font-weight: 700;
+    font-size: 20px;
+    color: #795548;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    font-family: Arial ;
+}
+
+.cardSubTitle{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    width: 660px;
+    line-height: 150%;
+    color: #795548;
+    font-family: Arial ;
+}
+
+.cardMore {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-family: Arial Black;
+    font-size: 17px;
+    color: #607D8B;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    cursor: pointer; 
+    transition: 0.2s;
+    margin-top: auto; 
+}
+
+.cardMore:hover {
+    border: 1px solid #607D8B;
+    background-color: #607D8B;
+    color: #fff;
+}
