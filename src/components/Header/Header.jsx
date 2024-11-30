@@ -1,25 +1,22 @@
 import React from "react";
 import './Header.css'
 
-const Header = () => {
+
+function Header({ onSearchChange, searchQuery }) {
     return (
-        <div className="headerContainer">
+    <div className="headerContainer">
         <div className="logo"></div>
-        
-        <div className="headerTitle">
-            <div className="htit">Кафе</div>
-            <div className="htit">Рестораны</div>
-            <div className="htit">Магазины</div>
+        <div className="search-bar"> 
+        <input className="search"
+            type="text"
+            placeholder="Поиск..."
+            value={searchQuery}
+            onChange={onSearchChange}
+        />
         </div>
-        <div className="HeaderBtn">
-            <button className="hbtn">узнать больше</button>
-        </div>
-        
-        </div>
-
+        <div></div>
+    </div>
     )
-
-
 }
 
 export default Header

@@ -1,7 +1,9 @@
 
 import './App.css';
-
+import DetailPage from './components/Pages/DetailPage';
 import PageHome from './components/Pages/PageHome';
+
+
 
 
 function App() {

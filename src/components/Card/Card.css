@@ -1,4 +1,17 @@
-.card {
+.ChooseCategory{
+    background-color: #607d8bd7;
+    width: 300px;
+    height: 65px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-family: Arial Black;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.card{
+    list-style: none;
     width: 900px;
     height: 220px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
@@ -6,34 +19,27 @@
     border-radius: 4px;
     transition: 0.2s;
     position: relative;
-    margin-top: 100px;
+    margin-top: 50px;
+
 }
-
-
 .card:hover {
     box-shadow: 4px 8px 16px #607D8B;
 }
 
 .card_img{
-
-    flex: 0 0 220px; 
+    flex: 0 0 220px;
     position: relative;
     overflow: hidden; 
 }
 
-.cardTitle{
+.cardText{
     display: flex;
     flex-direction: column;
     flex: 1 0 auto; 
     padding: 10px;
 }
 
-.card__prices {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.cardMeinTitle{
+.cardTitle{
     font-weight: 700;
     font-size: 20px;
     color: #795548;
@@ -42,7 +48,7 @@
     font-family: Arial ;
 }
 
-.cardSubTitle{
+.cardDes{
     display: block;
     margin-bottom: 10px;
     font-weight: 400;
@@ -73,4 +79,61 @@
     border: 1px solid #607D8B;
     background-color: #607D8B;
     color: #fff;
+}
+
+.paginationButton {
+    padding: 10px 20px;
+    height: 50px;
+    width: 111px;
+    margin: 50px;
+    background-color: #607D8B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial Black;
+}
+.paginationButton:disabled {
+    background-color: #ccc;
+    cursor: default;
+}
+.paginationButton.active {
+    background-color: #607D8B;
+    color: white;
+}
+
+
+.undefined{
+    padding: 8px 16px;
+    margin: 55px 5px;
+    border: 1px solid #607D8B;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-family: Arial Black;
+    color: #607d8bd7;
+}
+.undefined:hover {
+    background-color: #607d8bd8;
+    color: #fff;
+}
+
+.Paginate{
+    display: flex;
+
+}
+
+.body{
+display: list-item;
+}
+.Container{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 80%; 
+    margin: 0 auto; 
+    
+}
+.filter{
+    
 }
