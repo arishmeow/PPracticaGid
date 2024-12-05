@@ -1,14 +1,14 @@
 import React from 'react';
 import './PageHome.css';
-import Header from "../Header/Header";
 import EstablishmentList from '../Card/Card';
 import Footer from '../Footer/Footer';
 
-function PageHome () {
+
+function PageHome ({ establishments }) {
     return(
         <div className='body'>
-            <EstablishmentList/>
-
+            <EstablishmentList establishments={establishments}/>
+            <Footer/>
         </div>
     )
 }

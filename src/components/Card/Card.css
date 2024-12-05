@@ -1,14 +1,18 @@
 .ChooseCategory{
-    background-color: #607d8bd7;
+    background: linear-gradient(235deg, rgba(131,56,236,1) 10%, rgb(0, 0, 0) 100%);
     width: 300px;
-    height: 65px;
-    border-radius: 15px;
+    height: 60px;
+    border-radius: 10px;
     color: #ffffff;
-    font-family: Arial Black;
-    font-size: 18px;
+    font-family: Arial ;
+    font-size: 23px;
+    font-weight: 700;
     padding-left: 10px;
     margin-top: 50px;
     cursor: pointer;
+}
+*{
+    background-color: #1c1c1c;
 }
 .card{
     list-style: none;
@@ -23,7 +27,12 @@
 
 }
 .card:hover {
-    box-shadow: 4px 8px 16px #607D8B;
+    box-shadow: 4px 8px 16px #8338ec70;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card_img{
@@ -42,7 +51,7 @@
 .cardTitle{
     font-weight: 700;
     font-size: 20px;
-    color: #795548;
+    color: #ffffff;
     display: flex;
     flex-wrap: wrap-reverse;
     font-family: Arial ;
@@ -55,17 +64,17 @@
     font-size: 17px;
     width: 660px;
     line-height: 150%;
-    color: #795548;
+    color: #ffffff;
     font-family: Arial ;
 }
 
 .cardMore {
     display: block;
-    width: 100%;
+    width: 97%;
     font-weight: 400;
     font-family: Arial Black;
     font-size: 17px;
-    color: #607D8B;
+    color: #ffffff;
     padding: 10px;
     text-align: center;
     border: 1px solid #BDBDBD;
@@ -75,10 +84,11 @@
     margin-top: auto; 
 }
 
+
 .cardMore:hover {
-    border: 1px solid #607D8B;
-    background-color: #607D8B;
-    color: #fff;
+    border: 1px solid #8338EC;
+    background-color: #8338EC;
+    color: #000000;
 }
 
 .paginationButton {
@@ -86,7 +96,7 @@
     height: 50px;
     width: 111px;
     margin: 50px;
-    background-color: #607D8B;
+    background-color: #8338EC;
     color: white;
     border: none;
     border-radius: 5px;
@@ -94,46 +104,41 @@
     font-family: Arial Black;
 }
 .paginationButton:disabled {
-    background-color: #ccc;
+    background-color: #494949;
     cursor: default;
 }
 .paginationButton.active {
-    background-color: #607D8B;
+    background-color: #8338EC;
     color: white;
 }
-
 
 .undefined{
     padding: 8px 16px;
     margin: 55px 5px;
-    border: 1px solid #607D8B;
+    border: 1px solid #8338EC;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #ffffff00;
     cursor: pointer;
     font-family: Arial Black;
-    color: #607d8bd7;
+    color: #ffffff;
 }
 .undefined:hover {
-    background-color: #607d8bd8;
+    background-color: #8338ec81;
     color: #fff;
 }
 
 .Paginate{
     display: flex;
-
+    justify-content: center;
 }
 
 .body{
-display: list-item;
+display: flex;
+flex-direction: column;
 }
 .Container{
     display: flex; 
-    flex-direction: column; 
-    align-items: center; 
     width: 80%; 
     margin: 0 auto; 
-    
-}
-.filter{
-    
+    display: flex;
 }

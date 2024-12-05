@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 
 function Header({ onSearchChange, searchQuery }) {
     return (
     <div className="headerContainer">
-        <div className="logo"></div>
+        <Link to="/" className="logo"> </Link>
         <div className="search-bar"> 
         <input className="search"
             type="text"
